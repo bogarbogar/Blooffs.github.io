@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>
+            Login Page
+        </title>
+        
+    </head>
+    <body>
+        <form id="formElem">
+            <div>
+            <input type="text" id="first" placeholder="Name">
+        </div>
+        <br>
+            <div>
+            <input type="text" id="last" placeholder="Email">
+        </div>
+        <br>
+            <div>
+            <input type="submit">
+        </div>
+        </form>
+        
+      
+        <script>
+            var form=document.getElementById('formElem')
+            form.addEventListener('submit',function(e){
+                e.preventDefault();
+                alert();
+                var first=document.getElementById('first');
+                var last=document.getElementById('last');
+                //alert(first.value());
+                    
+
+                fetch("https://reqres.in/api/users",{
+                    
+  method: "GET",  
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+        
+
+ // alert(console.log(json));
+
+            })
+
+
+        </script>
+    </body>
+
+</html>

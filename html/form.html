@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Form filling
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/for.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script>
+           
+            function valid()
+    {
+      //  alert("1");
+    var text=document.getElementById("name").value;
+    var age=document.getElementById("age").value;
+    var gen=document.querySelector('input[name="gender"]:checked');
+    var email=document.getElementById("email").value;
+    var mo=document.getElementById("mobile").value;
+
+    if (text == undefined || text == "" || text.length == 0) 
+    {
+        alert("Name is blank");
+        return false;
+    } 
+   
+
+   else if(age>=1 && age<=200){
+                    
+                    return false;
+   }
+                
+   else if (gen == undefined || gen == "" || gen.length == 0) 
+    {
+        
+        return false;
+    } 
+    else if (email == undefined || email == "" || email.length == 0) 
+    {
+        
+        return false;
+    } 
+    else if (mo == undefined || mo == "" || mo.length == 0) 
+    {
+        
+        return false;
+    } 
+    else 
+    {
+        alert("Please enter a valid age limit");
+                
+        alert("Save Success!");
+        localStorage.setItem("Name");
+        localStorage.setItem("Age");
+        localStorage.setItem("Gender");
+        localStorage.setItem("Email");
+        localStorage.setItem("Mobile");
+        return true;
+    }
+ }
+ 
+ 
+function Reset()
+{
+    document.getElementById("name").value='';
+    document.getElementById("age").value='';
+    document.querySelector('input[name="gender"]:checked').value='';
+    document.getElementById("email").value='';
+    document.getElementById("mobile").value='';
+
+}
+        </script>
+        
+
+    </head>
+    <body >
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" id="check">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </label>
+            <label class="logo">HOWARD</label>
+            <ul>
+                <li><a href="C:\Users\bogar\Music\form\html\home.html">Home</a></li>
+                <li><a href="C:\Users\bogar\Music\form\html\about.html">About</a></li>
+                <li><a class="active"href="#">Apply Form</a></li>
+                <li><a href="#">Contact</a></li>
+                
+
+            </ul>
+        </nav>
+        <marquee class="mark"><b>
+            APPLY COURSES IN HOWARD UNIVERSITY
+        </b>
+
+        </marquee>
+        
+        
+        <table>
+        
+        </table>
+      
+        
+        <div class="content">
+        <h3>75 plus Colleges</h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span><b>One Application Form</b></span>
+        <br>
+        <br>
+        <br>
+
+        <p><b>The Universal College Application Form is a 
+           new offering from ReviewAdda. For long, students
+           had to face the hassle of filling a number of
+           forms every admission cycle. With over 200 colleges
+           being covered under one Universal Application form,
+           students can log on to ReviewAdda and forego their
+           form filling worries.</b></p>
+        </div>
+        
+        <div class="container" >
+           
+        <form id="user">
+            <h7><strong> REGISTER DETAILS </strong></h7>
+            <br>
+            <br>
+            <br>
+            <div class="inputbox">
+                <input type="text"  id="name" name="firstname1" value="" >
+                <label>Name</label>
+            </div>
+            <br>
+            
+            <div class="inputbox">
+            <input type="number" id="age" name="lastname1"></td>
+            <label>Age</label>
+            </div>
+            <br>
+            
+            <div>
+            <input type="radio" id="gen" name="gender" value="Male">
+                    <label for="male">Male</label>
+            <input type="radio" id="gen" name="gender" value="Female">
+                    <label for="female">Female</label>
+            </div>
+            <br>
+        
+            <div class="inputbox">
+                    <input type="text" id="email" name="email" required>
+                    <label>Email</label>
+            </div> 
+            <br>
+           
+            <div class="inputbox">
+                    <input type="number" id="mobile" name="num" required>
+                    <label>Mobile</label>
+            </div>
+            <br>
+
+            <div>
+                    <input type="checkbox" name="Remember me" required>Remember me
+            </div>
+            <br>
+            <br>
+            <div class="submit-reset">
+                    <button type="Submit">Apply</button>
+                    &nbsp;<button type="button"  onclick="Reset('ogar','hau')">Reset</button>
+            </div>
+            
+        </form>
+        
+        
+        </div>
+        <script src="C:\Users\bogar\Music\form\Script.js"></script>
+    
+    </body>
+
+
+
+
+</html>
