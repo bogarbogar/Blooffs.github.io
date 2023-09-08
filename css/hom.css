@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.home {
+    width:100%;
+   
+    height:100vh;
+    background-image: url(../images/omg.jpg);
+    
+    background-position: center;
+    background-size:cover;
+    overflow: hidden;
+}
+
+nav{
+    padding: 5px 0;
+    size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+marquee{
+    top:15%;
+    color: cyan;
+    border-width: 10px;
+}
+.ime1{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 20%;
+    right: 90%;
+    
+}
+.logo{
+    width: 140px;
+    right: 90%;
+    left: 10%;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 25px;
+    
+   
+
+
+}
+nav ul li a{
+    text-decoration: none;
+    top: 5%;
+    padding: 10px 30px;
+    color: black;
+    background-image: linear-gradient(45deg, rgb(250, 12, 195), white);
+    margin: 10px;
+    border-radius: 30px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    
+    
+}
+nav a{
+    text-decoration: none;
+    top: 5%;
+    padding: 10px 30px;
+    color: black;
+    background-image: linear-gradient(45deg, rgb(250, 12, 195), white);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+p{
+    text-indent: 130px;
+}
+.content{
+    position:absolute;
+    right: 20%;
+    top:20%;
+}
+h1{
+    color: rgb(246, 8, 119);
+}
+.ime2{
+    
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    right: 50%;
+    top: 40%;
+}
+.ime3{
+    
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    right: 5%;
+    top: 40%;
+}
+.cont{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    right: 0%;
+    top:100%;
+}
+h2{
+    position: absolute;
+    top:110%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font: 500;
+    color: blue;
+    font-display: red;
+    margin-left: 3%;
+}
+#lis{
+    position: absolute;
+    top: 120%;
+}
+#lis ol li{
+    text-decoration: none;
+    text-shadow: aqua;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: large;
+    padding-right: 20px;
+    margin-left: 95px;
+
+}
+.cob{
+    position:absolute;
+    right: 0%;
+    top:200%;
+    height: 60%;
+    width: 100%;
+}
+.lon{
+    position: absolute;
+    right: 0%;
+    top:104%;
+    height: 90%;
+    width: 30%;
+    margin-right: 40px;
+}
